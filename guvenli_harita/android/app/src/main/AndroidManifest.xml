@@ -1,7 +1,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="oguzhan.gondukcom.example.guvenli_harita">
     <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/> <!--KONUM İZİNLERİ -->
-   <application
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/> <!--KONUM İZİNLERİ -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/> <!--KONUM İZİNLERİ -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/> <!--KONUM İZİNLERİ -->
+    <uses-permission android:name="android.permission.INTERNET"/> <!--KONUM İZİNLERİ -->
+
+    <application
         android:label="guvenli_harita"
         android:icon="@mipmap/ic_launcher">
        <meta-data android:name="com.google.android.geo.API_KEY"
@@ -33,6 +38,5 @@
             android:name="flutterEmbedding"
             android:value="2" />
     </application>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/> <!--KONUM İZİNLERİ -->
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/> <!--KONUM İZİNLERİ -->
+
 </manifest>

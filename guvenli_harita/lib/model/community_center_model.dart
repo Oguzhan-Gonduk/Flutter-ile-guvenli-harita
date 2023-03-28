@@ -2,6 +2,7 @@
 //
 //     final communityCenter = communityCenterFromJson(jsonString);
 
+import 'package:meta/meta.dart';
 import 'dart:convert';
 
 class CommunityCenter {
@@ -57,15 +58,15 @@ class Result {
     required this.id,
   });
 
-  final String name;
-  final String address;
-  final String authorizedPersonnel;
-  final String phoneNumber;
-  final double longitude;
-  final double latitude;
-  final int cityId;
-  final String city;
-  final int id;
+  final String? name;
+  final dynamic? address;
+  final String? authorizedPersonnel;
+  final String? phoneNumber;
+  final double? longitude;
+  final double? latitude;
+  final int? cityId;
+  final dynamic? city;
+  final int? id;
 
   factory Result.fromRawJson(String str) => Result.fromJson(json.decode(str));
 
